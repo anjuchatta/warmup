@@ -9,7 +9,8 @@ abstract class Expr {
   def copy: Expr
   def duplicate: Expr
 }
-///dadhjd;
+
+//testing
 object Expr {
   case class Plus(e1: Expr, e2: Expr) extends Expr {
     def eval = e1.eval + e2.eval
@@ -19,7 +20,7 @@ object Expr {
       Plus(e1.copy, e2.copy)
     }
   }
-//gigli gigli gigli;
+
 
   case class Times(e1: Expr, e2: Expr) extends Expr {
     def eval = e1.eval * e2.eval
